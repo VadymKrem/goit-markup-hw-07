@@ -33,8 +33,7 @@ body {
   --hover-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  display: block;
 }
 /* Header */
 .header-main {
@@ -42,9 +41,11 @@ body {
   height: 76px;
 }
 .container {
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 428px;
+  min-width: 320px;
+  height: 432px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -173,25 +174,26 @@ body {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office.jpg);
-
-  padding-top: 188px;
-  padding-bottom: 188px;
 }
 .hero-content {
-  max-width: 496px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 112px;
+  padding-bottom: 112px;
+  padding-left: 0;
+  padding-right: 0;
 }
 .list-features {
   list-style-type: none;
 }
 .title-btn {
   font-weight: 700;
-  font-size: 56px;
+  font-size: 36px;
   line-height: 1.1;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--color-background);
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .btn:hover,
 .btn:focus {
@@ -209,7 +211,7 @@ body {
   border: 0;
 
   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
-  margin-top: 48px;
+  margin-top: 72px;
   margin-left: auto;
   margin-right: auto;
   padding: 16px 32px;
@@ -227,7 +229,8 @@ body {
 }
 .list-features {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
 }
 .icon-features {
   display: flex;
@@ -240,20 +243,30 @@ body {
   margin-bottom: 8px;
   background-color: var(--color-btn);
 }
+.item-features {
+  width: 396px;
+}
 .title-features {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--color-nav);
+  text-align: center;
 }
 .text-features {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--hover-focus-color-nav);
 
   margin-top: 8px;
+}
+@media screen and (max-width: 1199px) {
+  .icon-features {
+    display: none;
+  }
 }
 /* section skills */
 .section-skills {
