@@ -572,13 +572,15 @@ body {
 .btn-footer-subscribe {
   background: var(--color-change-logo);
   border-radius: 4px;
-  margin: 0;
+  margin: 0 auto;
   height: 40px;
+  width: 165px;
 
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding: 8px 24px;
 
   transition: background-color var(--hover-transition);
 }
