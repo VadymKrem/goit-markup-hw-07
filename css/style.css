@@ -1085,10 +1085,20 @@ body {
   .item-team {
     max-width: calc((100% - 24px) / 2);
   }
+  .customers-item {
+    width: calc((100% - 48px) / 3);
+  }
+  /* .list-customers {
+    margin-left: 108px;
+    margin-right: 108px;
+  } */
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .section-team > .container-team {
     max-width: 582px;
     flex-direction: column;
+  }
+  .customers > .cont-cust {
+    max-width: 582px;
   }
 }
