@@ -368,7 +368,8 @@ body {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
-  width: 100%;
+  /* width: 100%; */
+  max-width: 264px;
 }
 .link-social-media:is(:hover, :focus) {
   background-color: var(--color-address);
@@ -1081,9 +1082,9 @@ body {
     column-gap: 24px;
   }
 } */
-/* @media screen and (min-width: 768px) and (max-width: 1200px) {
-  .container-team {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .section-team > .container-team {
     max-width: 582px;
     flex-direction: column;
   }
-} */
+}
