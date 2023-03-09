@@ -1123,3 +1123,14 @@ body {
     max-width: 408px;
   }
 }
+@media screen and (min-width: 1200px) @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) .hero-content {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7) 100%
+    ),
+    url(../images/people-office-2x-desctop.jpg),
+    url(../images/people-office-desctop.jpg);
+}
