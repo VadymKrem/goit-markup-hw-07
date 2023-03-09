@@ -1052,6 +1052,17 @@ body {
     max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .address-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .address-list-item {
+    font-size: 16px;
+    line-height: 1.5;
   }
 }
 @media screen and (min-width: 768px) @media (min-device-pixel-ratio: 2),
@@ -1126,11 +1137,13 @@ body {
 @media screen and (min-width: 1200px) @media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
-  (min-resolution: 2dppx) .hero-content {
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7) 100%
-    ),
-    url(../images/people-office-2x-desctop.jpg),
-    url(../images/people-office-desctop.jpg);
+  (min-resolution: 2dppx) {
+  .hero-content {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7) 100%
+      ),
+      url(./images/people-office-2x-desctop.jpg),
+      url(./images/people-office-desctop.jpg);
+  }
 }
