@@ -163,15 +163,7 @@ body {
 }
 /* section hero */
 .section-hero {
-  /* height: 432px; */
-
-  /* max-width: 1440px; */
-}
-.hero-content {
-  padding-top: 112px;
-  padding-bottom: 112px;
-  padding-left: 0;
-  padding-right: 0;
+  background: var(--color-nav);
   background-image: linear-gradient(
       to right,
       rgba(46, 47, 66, 0.7),
@@ -181,14 +173,24 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  min-height: 436px;
+  max-width: 1440px;
+}
+.hero-content {
+  padding-top: 112px;
+  padding-bottom: 112px;
+  padding-left: 0;
+  padding-right: 0;
+
   margin-left: auto;
   margin-right: auto;
-  /* background: var(--color-nav); */
+
+  width: 100%;
 }
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
   screen and (max-width: 767px) and (min-resolution: 192dpi),
   screen and (max-width: 767px) and (min-resolution: 2dppx) {
-  .hero-content {
+  .section-hero {
     background-image: linear-gradient(
         to right,
         rgba(46, 47, 66, 0.7),
@@ -983,6 +985,9 @@ body {
   .nav-list {
     display: none;
   }
+  .address-list {
+    display: none;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -1047,46 +1052,16 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .address-list {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-  }
-  .address-list-item {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-}
-@media screen and (min-width: 768px) @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) .hero-content {
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7) 100%
-    ),
-    url(../images/dark-bg-tablet-2x.jpg), url(../images/Dark-bg-tablet.jpg);
-}
-@media screen and (min-width: 768px) {
-  .title-features {
-    margin-top: 0;
-    text-align: left;
-  }
-}
 @media screen and (min-width: 768px) {
   .list-team {
     flex-direction: row;
     flex-wrap: wrap;
     row-gap: 64px;
     column-gap: 24px;
+  }
+  .title-features {
+    margin-top: 0;
+    text-align: left;
   }
   .item-team {
     max-width: calc((100% - 24px) / 2);
@@ -1121,6 +1096,9 @@ body {
   .form-footer-email {
     flex-direction: row;
   }
+  .btn {
+    margin-top: 36px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .section-team > .container-team {
@@ -1134,16 +1112,61 @@ body {
     max-width: 408px;
   }
 }
-@media screen and (min-width: 1200px) @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero-content {
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .section-hero {
     background-image: linear-gradient(
+        to right,
         rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7) 100%
+        rgba(46, 47, 66, 0.7)
       ),
-      url(./images/people-office-2x-desctop.jpg),
-      url(./images/people-office-desctop.jpg);
+      url(../images/dark-bg-tablet-2x-min.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .address-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .address-list-item {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .hero-content {
+    height: 600px;
+    max-width: 1440px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+  .icon-features {
+    display: flex;
+  }
+  .list-features > .item-features {
+    width: calc((100% - 72px) / 4);
+  }
+  .feat {
+    max-width: 1128px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (min-resolution: 192dpi),
+  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-2x-desctop.jpg);
   }
 }
