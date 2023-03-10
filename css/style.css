@@ -287,6 +287,7 @@ body {
 /* section skills */
 .section-skills {
   padding-top: 0;
+  padding-bottom: 120px;
 }
 .list-skills {
   display: flex;
@@ -1156,6 +1157,27 @@ body {
   }
   .feat {
     max-width: 1128px;
+  }
+  .section-team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .section-team > .container-team {
+    max-width: 1128px;
+    flex-direction: column;
+  }
+  .item-team {
+    max-width: calc((100% - 72px) / 4);
+  }
+  .customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .customers-item {
+    width: calc((100% - 120px) / 6);
+  }
+  .foot-column {
+    max-width: 1158px;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
